@@ -103,7 +103,7 @@ public class FitsReader {
         String url = "jdbc:jtds:sqlserver://sciserver01;DatabaseName=hst";
         String driver = "net.sourceforge.jtds.jdbc.Driver";
         String username = "hstuser";
-        String password = "hst111";
+        String password = "*********";
 
         try {
             conn = fr.dbConnect(url, driver, username, password);
