@@ -129,8 +129,16 @@ public class FitsReader {
 
         FitsReader fr = new FitsReader();
 
+        String url = "jdbc:jtds:sqlserver://dsp070;DatabaseName=hst";
+        String meta_url = "jdbc:jtds:sqlserver://dsp070;DatabaseName=[Cosmos3dHST]";
+        String driver = "net.sourceforge.jtds.jdbc.Driver";
+        String username = "hstuser";
+        String password = "hst111";
+
         StarTable table = null;
         Connection conn = null;
+        List<String> fileList = new ArrayList<String>();
+
         try {
             conn = fr.dbConnect(meta_url, driver, username, password);
 
